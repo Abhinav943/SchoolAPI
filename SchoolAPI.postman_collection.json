@@ -1,0 +1,70 @@
+{
+  "info": {
+    "_postman_id": "9d6111b8-1c1e-4d56-a3e1-94c529b2240e",
+    "name": "SchoolAPI",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "53370243",
+    "_collection_link": "https://go.postman.co/collection/53370243-9d6111b8-1c1e-4d56-a3e1-94c529b2240e?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "addSchool",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"name\": \"Delhi Public School\",\r\n    \"address\": \"Sector 4, RK Puram\",\r\n    \"latitude\": 28.5535,\r\n    \"longitude\": 77.1640\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://schoolapi-dbz6.onrender.com/addSchool",
+          "protocol": "https",
+          "host": [
+            "schoolapi-dbz6",
+            "onrender",
+            "com"
+          ],
+          "path": [
+            "addSchool"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "listSchools",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://schoolapi-dbz6.onrender.com/listSchools?latitude=28.5500&longitude=77.1600",
+          "protocol": "https",
+          "host": [
+            "schoolapi-dbz6",
+            "onrender",
+            "com"
+          ],
+          "path": [
+            "listSchools"
+          ],
+          "query": [
+            {
+              "key": "latitude",
+              "value": "28.5500"
+            },
+            {
+              "key": "longitude",
+              "value": "77.1600"
+            }
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
